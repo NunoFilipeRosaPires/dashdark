@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.navbar {
+  height: pxToRem(72);
+  background-color: $color-01;
+  border-bottom: 1px solid $color-02;
+
+  &__logo,
+  &__btn {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: pxToRem(12);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .navbar {
+    max-width: pxToRem(300);
+    border-bottom: none;
+  }
+}

@@ -1,1 +1,4 @@
-@use "app";
+@forward "app";
+
+@forward "./components/common/";
+@forward "./components/navbar";

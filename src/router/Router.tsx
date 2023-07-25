@@ -6,7 +6,7 @@ export const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<Dashboard />}></Route>
+        <Route index element={<Dashboard />} />
         {/* <Route path="messages" element={<DashboardMessages />} /> */}
       </Route>
     </Routes>

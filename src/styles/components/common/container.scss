@@ -1,0 +1,15 @@
+@use "../../functions" as *;
+
+$sm-padding: 16;
+
+.container {
+  width: calc(100% - pxToRem($sm-padding) * 2);
+  padding-inline: pxToRem($sm-padding);
+}
+.container-fluid {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
